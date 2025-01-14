@@ -635,7 +635,7 @@ footer p{
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .menu{
         padding: 15px;
     }
@@ -677,7 +677,7 @@ footer p{
     }
 
     header{
-        min-height: 1100px;
+        max-height: 90vh;
     }
 
     /* HEADER */
@@ -685,7 +685,6 @@ footer p{
         display: flex;
         flex-direction: column;
         padding: 20px;
-        padding-top: 550px;
     }
 
     .header-img img{

@@ -472,7 +472,7 @@ footer p{
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .menu{
         padding: 15px;
     }

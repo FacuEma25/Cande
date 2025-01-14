@@ -664,7 +664,7 @@ footer p{
     font-size: 1rem;
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .menu{
         padding: 15px;
     }
@@ -740,20 +740,20 @@ footer p{
     /* CARTELES ROJOS */
     .cartel-1{
         position: absolute;
-        left: 270px;
+        left: 400px;
         bottom: -60px;
     }
 
     .cartel-2{
         position: absolute;
-        left: 270px;
-        bottom: -580px;
+        left: 400px;
+        bottom: -570px;
     }
 
     .cartel-3{
         position: absolute;
-        left: 270px;
-        bottom: -1100px;
+        left: 400px;
+        bottom: -1090px;
     }
     
     .box-2 h4{

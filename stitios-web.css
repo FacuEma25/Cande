@@ -529,7 +529,7 @@ footer p{
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .menu{
         padding: 15px;
     }
@@ -639,11 +639,12 @@ footer p{
     }
 
     .work-text h3{
-        max-width: 70%;
+        max-width: 50%;
         margin: 0 auto;
     }
 
     .work-text h4{
+        max-width: 70%;
         margin: 0 auto;
     }
 
@@ -651,6 +652,11 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .work-content .work-img img{
+        position: relative;
+        right: 0px;
     }
 
     footer{
