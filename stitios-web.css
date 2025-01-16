@@ -616,6 +616,14 @@ footer p{
         margin: 0 auto;
     }
 
+    .landing-img h2, p{
+        margin: 0 auto;
+    }
+
+    .eco-tittle h2, p{
+        margin: 0 auto;
+    }
+
     /* work-content */
     .work-content{
         display: flex;
@@ -652,6 +660,7 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        text-align: center;
     }
 
     .work-content .work-img img{

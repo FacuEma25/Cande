@@ -230,6 +230,14 @@ main .main-tittle{
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.404);
 }
 
+.services-content{
+    background-color: var(--principal);
+}
+
+.icono-services{
+    display: none;
+}
+
 .services-container p{
     font-family: var(--font-text);
     font-weight: 600;
@@ -545,13 +553,6 @@ footer p{
         display: none;
     }
 
-    .sv-1-fondo{
-        /* background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/Oratoria\ servicios\ \(1\).jpg);
-        background-size: cover; */
-        background-color: var(--naranja);
-        padding: 100px 0;
-    }
-
     .tittle-serv{
         margin: 0 auto;
     }
@@ -572,6 +573,23 @@ footer p{
 
     .contact-content{
         padding: 100px 25px;
+    }
+
+    .contact-content h2{
+        width: 80%;
+    }
+
+    .icono-services{
+        display: initial;
+    }
+
+    .icono-services{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .services-1{
+        margin: 20px;
     }
 
 
