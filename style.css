@@ -694,6 +694,10 @@ footer p{
         display: none;
     }
 
+    .wrapper h1{
+        text-align: center;
+    }
+
     .content{
         padding: 100px 20px 100px 20px;
         text-align: center;
