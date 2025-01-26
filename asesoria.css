@@ -683,4 +683,9 @@ footer p{
     .formas-de-pago h5{
         font-size: 1.2rem;
     }
+
+    main .main-tittle{
+        font-size: 3rem;
+        padding: 0 50px;
+    }
 }
