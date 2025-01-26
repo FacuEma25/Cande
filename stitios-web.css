@@ -206,6 +206,7 @@ img{
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 80px;
 }
 
 .web-img{
@@ -216,7 +217,8 @@ img{
 }
 
 .web-img img{
-    width: 700px;
+    width: 500px;
+    min-width: 100%;
 }
 
 .web-title {
