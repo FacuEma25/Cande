@@ -28,15 +28,16 @@
     --menu: #fac6d7;
     --menu2: #fac6d7;
     --botones: #d3d88e;
-    --letra: #6d3630;
+    --letra: #494949;
     --letra2: #fff;
     --letra2: #efede3;
     --violeta: #642bff;
-    --black: #292427;
+    --black: #494949;
     --white: #fff;
 
     --naranja: #f8ad40;
     --verde: #d3d88e;
+    --gris: #494949;
 }
 
 /*Auto scrol*/
@@ -168,16 +169,17 @@ header{
 }
 
 h1{
-    font-family: var(--header-font);
+    font-family: var(--font-general);
     font-size: 5rem;
     font-weight: 400;
     line-height: 4.5rem;
     padding-bottom: 15px;
+    font-weight: 600;
 }
 
 span{
     color: var(--menu);
-    font-family: var(--header-font);
+    font-family: var(--font-general);
 }
 
 p{
@@ -275,48 +277,56 @@ p{
 .card:nth-child(1):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/1\ -\ Redes\ Sociales.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(2):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/2\ -\ Redes\ Sociales.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(3):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/3\ -\ Publicidad\ Digital.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(4):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/4\ -\ Asesoria.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(5):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/5\ -\ Asesoria\ comercial.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(6):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/6\ -\ Ortatoria\ y\ Liderazgo.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(7):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/7\ -\ Coaching.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(8):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/8\ -\ Cursos.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--white);
 }
 
@@ -444,8 +454,11 @@ p{
     /* background: rgb(208,126,118);
     background: linear-gradient(243deg, rgba(208,126,118,1) 0%, rgba(109,54,48,1) 100%);   */
 
-    background: rgb(211,216,142);
-    background: linear-gradient(243deg, rgba(211,216,142,1) 0%, rgba(255,255,255,1) 100%);
+    /* background: rgb(211,216,142);
+    background: linear-gradient(243deg, rgba(211,216,142,1) 0%, rgba(255,255,255,1) 100%); */
+
+    background: rgb(250,198,215);
+    background: linear-gradient(90deg, rgba(250,198,215,1) 0%, rgba(255,255,255,1) 61%);
     display: flex;
     gap: 200px;
     text-align: center;
@@ -457,7 +470,7 @@ p{
 }
 
 .clientes1{
-    color: var(--black);
+    color: var(--gris);
 }
 
 .clientes1 h2{
@@ -509,7 +522,7 @@ p{
     line-height: 60px;
     text-align: center;
     background-color: var(--botones);
-    color: var(--black);
+    color: var(--gris);
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
@@ -518,7 +531,7 @@ p{
 .footer-redes1 a:hover{
     transform: scale(1.2);
     background-color: var(--principal);
-    color: var(--black);
+    color: var(--gris);
 }
 
 /*BOTON TOP*/
@@ -610,7 +623,7 @@ footer p{
 }
 
 /* RESONSIVE */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .menu{
         padding: 15px 0;
     }
@@ -647,8 +660,9 @@ footer p{
 
     header {
         margin: 60px 0 0 0;
-        background-image: url(img/portada-cel.png);
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(imgCande/Extra\ 1\ -\ Cel.png);
         background-size: cover;
+        background-position: center;
     }
 
     header .content{
@@ -700,11 +714,6 @@ footer p{
     }
 
     /* Servicios */
-
-    .wrapper .wrapper-text{
-        text-align: center;
-        padding: 0 40px;
-    }
 
     .content-box{
         display: flex;
@@ -774,4 +783,8 @@ footer p{
     .footer-text-1{
         padding: 0 50px;
     }
+}
+
+@media (min-width: 481px), (max-width: 999px) {
+
 }

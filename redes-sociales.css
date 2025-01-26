@@ -29,11 +29,11 @@
     --menu: #fac6d7;
     --menu2: #fac6d7;
     --botones: #d3d88e;
-    --letra: #6d3630;
+    --letra: #494949;
     --letra2: #fff;
     --letra2: #efede3;
     --violeta: #642bff;
-    --black: #292427;
+    --black: #494949;
     --white: #fff;
 
     --naranja: #f8ad40;
@@ -122,6 +122,22 @@ img{
 
 .logo .logo-img{
     width: 100px;
+}
+
+.menu-horizonal li:hover .menu-vertical{
+    display: block;
+}
+
+/* MENU VERTICAL */
+.menu-vertical{
+    position: fixed;
+    display: none;
+    width: 200px;
+    background-color: var(--menu2);
+}
+
+.menu-horizonal {
+    transition: .8s;
 }
 
 .menu-horizonal li:hover .menu-vertical{
@@ -377,7 +393,6 @@ main{
 .content h2{
     font-family: var(--font-general);
     font-size: 3rem;
-    padding-bottom: 15px;
 }
 
 .card-1 .precio h4{
@@ -409,12 +424,11 @@ main{
 }
 
 .promos-info{
-    padding-top: 25px;
     font-size: 1rem;
 }
 
 .promos-info p::before{
-    content: '*';
+    content: '▶ ';
 }
 
 .card-1:hover{
@@ -464,7 +478,7 @@ main{
 }
 
 .trabajo-content p::before{
-    content: '*';
+    content: '▶ ';
 }
 
 .trabajo-content .img-trabajo img{
@@ -664,7 +678,7 @@ footer p{
     font-size: 1rem;
 }
 
-@media (max-width: 600px){
+@media (max-width: 480px) {
     .menu{
         padding: 15px;
     }
@@ -692,6 +706,11 @@ footer p{
 
     .menu .logo{
         padding: 0 25px 0 25px;
+    }
+
+    .menu-vertical{
+        z-index: 100;
+        background-color: var(--menu);
     }
 
     .main{
@@ -729,6 +748,11 @@ footer p{
        gap: 50px;
        justify-content: center;
        align-items: center;
+    }
+
+    .planes-content h2{
+        font-size: 2.5rem;
+        padding: 20px 100px;
     }
 
     .card-content{
@@ -779,7 +803,7 @@ footer p{
     }
 
     .text-trabajo p{
-        text-align: center;
+        text-align: left;
         padding: 0 20px;
     }
 

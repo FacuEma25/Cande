@@ -30,11 +30,11 @@
     --menu: #fac6d7;
     --menu2: #fac6d7;
     --botones: #d3d88e;
-    --letra: #6d3630;
+    --letra: #494949;
     --letra2: #fff;
     --letra3: #efede3;
     --violeta: #642bff;
-    --black: #292427;
+    --black: #494949;
     --white: #fff;
 
     --naranja: #f8ad40;
@@ -144,7 +144,23 @@ img{
     display: none;
 }
 
-/* PORTADA */
+/* MENU VERTICAL */
+.menu-vertical{
+    position: fixed;
+    display: none;
+    width: 200px;
+    background-color: var(--menu2);
+}
+
+.menu-horizonal {
+    transition: .8s;
+}
+
+.menu-horizonal li:hover .menu-vertical{
+    display: block;
+} 
+
+/* HEADER */
 .header-tittle{
     background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) ), url(img/web-portada.jpg);
     background-size: cover;
@@ -284,6 +300,8 @@ img{
     background: linear-gradient(243deg, rgba(211,216,142,1) 0%, rgba(255,255,255,1) 100%);
     padding-left: 220px;
     color: var(--letra);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .work-content .work-text h2{
@@ -529,7 +547,7 @@ footer p{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 480px) {
     .menu{
         padding: 15px;
     }
@@ -557,6 +575,11 @@ footer p{
 
     .menu .logo{
         padding: 0 25px 0 25px;
+    }
+
+    .menu-vertical{
+        z-index: 100;
+        background-color: var(--menu);
     }
 
     .main{
@@ -609,6 +632,11 @@ footer p{
         padding: 0;
     }
 
+    .web-title .line{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
     .landing-img{
         display: flex;
         flex-direction: column;
@@ -628,7 +656,7 @@ footer p{
     .work-content{
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
+        padding: 45px 15px;
     }
 
     .work-text{
@@ -647,13 +675,26 @@ footer p{
     }
 
     .work-text h3{
-        max-width: 50%;
+        max-width: 70%;
         margin: 0 auto;
     }
 
     .work-text h4{
         max-width: 70%;
         margin: 0 auto;
+    }
+
+    .lug-text {
+        padding: 0 25px;
+    }
+
+    .lug-text  p{
+        width: 60%;
+    }
+
+    .lug-text .botom-lugares{
+        font-size: 15px;
+        padding: 15px;
     }
 
     .footer-info1{
@@ -664,8 +705,7 @@ footer p{
     }
 
     .work-content .work-img img{
-        position: relative;
-        right: 0px;
+        display: none;
     }
 
     footer{
@@ -675,7 +715,11 @@ footer p{
     }
 
     footer p{
-        width: 90%;
+        width: 60%;
         margin: 0 auto;
+    }
+
+    footer .p-extra{
+        width: 50%;
     }
 }

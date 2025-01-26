@@ -27,11 +27,11 @@
     --menu: #fac6d7;
     --menu2: #fac6d7;
     --botones: #d3d88e;
-    --letra: #6d3630;
+    --letra: #494949;
     --letra2: #fff;
     --letra2: #efede3;
     --violeta: #642bff;
-    --black: #292427;
+    --black: #494949;
     --white: #fff;
 
     --naranja: #f8ad40;
@@ -129,6 +129,24 @@ img{
     cursor: pointer;
     display: none;
 }
+
+/* MENU VERTICAL */
+.menu-vertical{
+    position: fixed;
+    display: none;
+    width: 200px;
+    background-color: var(--menu2);
+}
+
+.menu-horizonal {
+    transition: .8s;
+}
+
+.menu-horizonal li:hover .menu-vertical{
+    display: block;
+} 
+
+/* HEADER */
 
 .header-content{
     background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) ), url(img/Asesoria.jpg);
@@ -257,7 +275,8 @@ main .main-tittle{
     display: flex;
     flex-direction: column;
     background: rgb(211,216,142);
-    background: linear-gradient(243deg, rgba(211,216,142,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(250,198,215);
+    background: linear-gradient(90deg, rgba(250,198,215,1) 0%, rgba(255,255,255,1) 61%);
     color: var(--letra);
     padding: 50px 0;
     margin: 0 auto;
@@ -480,7 +499,7 @@ footer p{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 480px) {
     .menu{
         padding: 15px;
     }
@@ -508,6 +527,11 @@ footer p{
 
     .menu .logo{
         padding: 0 25px 0 25px;
+    }
+
+    .menu-vertical{
+        z-index: 100;
+        background-color: var(--menu);
     }
 
     .main{
@@ -615,5 +639,48 @@ footer p{
 
     .footer-text-1{
         padding: 0 50px;
+    }
+
+    /* TAMAÑOS DE FUENTES CEL */
+    .services-1 h2{
+        font-size: 2rem;
+    }
+
+    .services-1 .sub-services{
+        font-size: 1.7rem;
+    }
+
+    .services-1 .text-services{
+        font-size: 1rem;
+    }
+
+    .services-1 .services-container p{
+        font-size: 1.2rem;
+        padding: 0 50px;
+    }
+
+    .contact-content h2{
+        font-size: 2rem;
+    }
+
+    .contact-content p{
+        font-size: 1.2rem;
+    }
+
+    .contact-content .precio{
+        font-size: 1rem;
+    }
+
+    .contact-content h3{
+        font-size: 2rem;
+    }
+
+    .contact-content h4{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .formas-de-pago h5{
+        font-size: 1.2rem;
     }
 }
