@@ -651,7 +651,10 @@ footer p{
 
     .menu-vertical{
         z-index: 10000;
-        background-color: var(--menu);
+        /* background-color: var(--menu); */
+        background-color: var(--letra2);
+        color: var(--principal);
+        left: 110px;
     }
 
     .menu .logo{
@@ -786,6 +789,11 @@ footer p{
 
     .footer-text-1{
         padding: 0 50px;
+    }
+
+    /* CANCELACION DE ID SERVICIOS */
+    #servicios{
+        display: none;
     }
 }
 

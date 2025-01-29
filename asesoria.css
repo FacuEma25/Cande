@@ -688,4 +688,13 @@ footer p{
         font-size: 3rem;
         padding: 0 50px;
     }
+
+    /* MENÚ VERTICAL CAMBIO */
+    .menu-vertical{
+        z-index: 10000;
+        /* background-color: var(--menu); */
+        background-color: var(--letra2);
+        color: var(--principal);
+        left: 110px;
+    }
 }

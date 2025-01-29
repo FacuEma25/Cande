@@ -805,6 +805,15 @@ footer p{
         line-height: 3.4rem;
         padding: 0 100px;
     }
+
+    /* MENÚ VERTICAL CAMBIO */
+    .menu-vertical{
+        z-index: 10000;
+        /* background-color: var(--menu); */
+        background-color: var(--letra2);
+         color: var(--principal);
+        left: 110px;
+    }
 }
 
 /* @media (min-width: 600px), (max-width:900px){
