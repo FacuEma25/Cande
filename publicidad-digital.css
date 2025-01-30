@@ -798,13 +798,15 @@ footer p{
     /* CORRECCIONES */
     .google-ads h2{
         line-height: 3.4rem;
-        padding: 0 100px;
+        padding: 0px;
     }
 
     .meta-ads h2{
         line-height: 3.4rem;
-        padding: 0 100px;
+        padding: 0px;
     }
+
+
 
     /* MENÚ VERTICAL CAMBIO */
     .menu-vertical{
@@ -814,6 +816,7 @@ footer p{
          color: var(--principal);
         left: 110px;
     }
+
 }
 
 /* @media (min-width: 600px), (max-width:900px){
