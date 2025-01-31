@@ -440,10 +440,11 @@ main{
     text-align: center;
     padding-top: 35px;
     padding-bottom: 0;
-    background-image: url(img/lugares2.png);
+    background: rgb(250,198,215);
+    background: linear-gradient(90deg, rgba(250,198,215,1) 45%, rgba(255,255,255,1) 82%);
     margin: 25px 0;
     padding-bottom: 50px;
-    color: white;
+    color: var(--black);
 }
 
 .box-2 h4{
@@ -518,7 +519,7 @@ main{
 .lug-text a{
     background-color: var(--botones);
     font-size: 1.5rem;
-    color: white;
+    color: var(--black);
     padding: 15px 25px;
     border-radius: 15px;
     transition: .3s;
@@ -532,6 +533,10 @@ main{
 
 .span-verde{
     color: var(--verde);
+}
+
+.span-rosa{
+    color: var(--principal);
 }
 
 /**DIV FOOTER - Info y redes sociales*/
@@ -829,17 +834,22 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        width: 70%;
         margin: 0 auto;
     }
 
     footer p{
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
     }
 
-    .footer-text-1{
-        padding: 0 50px;
+    footer .p-extra{
+        width: 60%;
     }
 
+    /* CAMBIOS FINALES */
+    .planes-content h2{
+        padding: 20px 0px;
+        width: 11ch;
+        margin: 0 auto;
+    }
 }

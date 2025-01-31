@@ -656,7 +656,7 @@ footer p{
 
     .services-1 .services-container p{
         font-size: 1.2rem;
-        padding: 0 50px;
+        padding: 0px;
     }
 
     .contact-content h2{
@@ -686,7 +686,7 @@ footer p{
 
     main .main-tittle{
         font-size: 3rem;
-        padding: 0 50px;
+        padding: 0px;
     }
 
     /* MENÚ VERTICAL CAMBIO */
@@ -696,5 +696,13 @@ footer p{
         background-color: var(--letra2);
         color: var(--principal);
         left: 110px;
+    }
+
+    .formas-de-pago h5{
+        font-size: 0.9rem;
+    }
+
+    .formas-de-pago i{
+        font-size: 0.9rem;
     }
 }

@@ -385,10 +385,9 @@ main{
     transition: .3s;
 }
 
-.content h2{
+.card-1 .content h2{
     font-family: var(--font-general);
     font-size: 3rem;
-    padding-bottom: 15px;
 }
 
 .card-1 .precio h4{
@@ -787,12 +786,12 @@ footer p{
     }
 
     footer p{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
-    .footer-text-1{
-        padding: 0 50px;
+    footer .p-extra{
+        width: 60%;
     }
 
     /* CORRECCIONES */
@@ -806,6 +805,16 @@ footer p{
         padding: 0px;
     }
 
+    .planes-content{
+        padding: 0 10px;
+    }
+
+    .planes-content h2{
+        font-size: 2.8rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 
 
     /* MENÚ VERTICAL CAMBIO */
