@@ -58,12 +58,12 @@ img{
 
 /* SPANS */
 .span-verde {
-    color: var(--verde);
+    color: var(--font-general);
 }
 
 .span-verde-2 {
     color: var(--verde);
-    font-family: var(--header-font);
+    font-family: var(--font-general);
 }
 
 .span-rosa{
@@ -203,7 +203,7 @@ header{
 
 .header-text h1{
     font-size: 3rem;
-    font-family: var(--header-font);
+    font-family: var(--font-general);
     margin-bottom: 25px;
 }
 
@@ -392,10 +392,11 @@ main{
 
 .card-1 .precio h4{
     font-family: var(--font-general);
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--letra);
     text-align: center;
     padding-top: 15px;
+    line-height: 2rem;
 }
 
 .card-1 .precio h5{
@@ -491,9 +492,9 @@ main{
 }
 
 .lug-text a{
-    background-color: var(--botones);
+    background-color: var(--naranja);
     font-size: 1.5rem;
-    color: white;
+    color: var(--black);
     padding: 15px 25px;
     border-radius: 15px;
     transition: .3s;

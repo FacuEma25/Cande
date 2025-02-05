@@ -20,8 +20,9 @@
 }
 
 :root{
-    --header-font: "Yusei Magic", serif;;
-    --font-general: "Jost", serif;;
+    --header-font: "Jost", serif;
+    --header-font-Vieja: "Yusei Magic", serif;
+    --font-general: "Jost", serif;
     --font-text: "Quicksand", serif;
     --principal: #e48aa5;
     --menu: #fac6d7;
@@ -306,7 +307,7 @@ main .main-tittle{
 
 .contact-content h3{
     font-family: var(--header-font);
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     margin-bottom: 25px;
 }
 
@@ -326,16 +327,16 @@ main .main-tittle{
 
 .formas-de-pago i{
     color: var(--principal);
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .formas-de-pago .pago-1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .formas-de-pago h5{
-    color: var(--principal);
-    font-size: 25px;
+    color: var(--black);
+    font-size: 15px;
 }
 
 .btn-contact{

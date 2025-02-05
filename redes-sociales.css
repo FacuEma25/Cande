@@ -176,12 +176,12 @@ main{
 
 .main-tittle h1{
     font-size: 4rem;
-    font-family: var(--header-font);
+    font-family: var(--font-general);
     line-height: 3.8rem;
 }
 
 .main-tittle .span-verde{
-    font-family: var(--header-font);
+    font-family: var(--font-general);
 }
 
 .main-tittle .text-principal{
@@ -397,7 +397,7 @@ main{
 
 .card-1 .precio h4{
     font-family: var(--font-general);
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--letra);
     margin-bottom: 15px;
     text-align: center;
@@ -424,7 +424,7 @@ main{
 }
 
 .promos-info{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .promos-info p::before{

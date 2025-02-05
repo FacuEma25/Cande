@@ -23,8 +23,9 @@
 }
 
 :root{
-    --header-font: "Yusei Magic", serif;;
-    --font-general: "Jost", serif;;
+    --header-font: "Jost", serif;
+    --header-font-Vieja: "Yusei Magic", serif;
+    --font-general: "Jost", serif;
     --font-text: "Quicksand", serif;
     --principal: #e48aa5;
     --menu: #fac6d7;
@@ -191,11 +192,11 @@ img{
 }
 
 .header-tittle .txt-2{
-    max-width: 38%;
+    width: 28%;
 }
 
 .header-tittle .txt-3{
-    max-width: 90%;
+    max-width: 30%;
 }
 
 /* Sitios Web */
@@ -225,7 +226,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-right: 350px;
+    padding-right: 50px;
     color: var(--letra3);
 }
 
@@ -237,7 +238,7 @@ img{
 
 .web-title .landing-img h2{
     font-size: 3.0rem;
-    font-family: var(--header-font);
+    font-family: var(--header-font-Vieja);
     color: var(--letra);
     border-radius: 10px 10px;
     margin-bottom: 20px;
@@ -245,7 +246,10 @@ img{
 
 .web-title .landing-img .precio-landing{
     font-family: var(--header-font);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    background-color: var(--naranja);
+    padding: 0 5px;
+    border-radius: 0px;
 }
 
 .web-title .landing-img p{
@@ -269,7 +273,7 @@ img{
 
 .web-title .eco-tittle h2{
     font-size: 3rem;
-    font-family: var(--header-font);
+    font-family: var(--header-font-Vieja);
     color: var(--letra);
     border-radius: 10px 10px;
     margin-bottom: 20px;
@@ -277,7 +281,10 @@ img{
 
 .web-title .eco-tittle .precio-landing{
     font-family: var(--header-font);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    background-color: var(--naranja);
+    padding: 0 5px;
+    border-radius: 0px;
 }
 
 .web-title .eco-tittle p{
@@ -324,13 +331,13 @@ img{
 
 .work-content .work-text h3{
     font-family: var(--header-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 .work-content .work-text h4{
     font-family: var(--font-text);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .work-content p{
@@ -390,9 +397,9 @@ img{
 }
 
 .lug-text a{
-    background-color: var(--botones);
+    background-color: var(--naranja);
     font-size: 1.5rem;
-    color: white;
+    color: var(--black);
     padding: 15px 25px;
     border-radius: 15px;
     transition: .3s;

@@ -430,8 +430,12 @@ p{
 
 .nosotros{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 40% 60%;
     padding: 0 0 100px 0;
+}
+
+.nos-imgCel{
+    display: none;
 }
 
 .nosotros-text{
@@ -446,7 +450,7 @@ p{
 }
 
 .nosotros-text p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .nosotros-img img{
@@ -831,12 +835,23 @@ footer p{
     }
 
     .nosotros-text p{
+        font-size: 1.2rem;
         width: 20ch;
         margin: 0 auto;
     }
 
     .clientes-contend{
         margin-top: 0px;
+    }
+
+    .nos-imgCel{
+        display: block;
+    }
+    .nos-imgCel img{
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 }
 
