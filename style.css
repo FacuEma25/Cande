@@ -460,12 +460,6 @@ p{
 
 /* CLIENTES */
 .clientes-contend{
-    /* background: rgb(208,126,118);
-    background: linear-gradient(243deg, rgba(208,126,118,1) 0%, rgba(109,54,48,1) 100%);   */
-
-    /* background: rgb(211,216,142);
-    background: linear-gradient(243deg, rgba(211,216,142,1) 0%, rgba(255,255,255,1) 100%); */
-
     background: rgb(250,198,215);
     background: linear-gradient(90deg, rgba(250,198,215,1) 0%, rgba(255,255,255,1) 61%);
     display: flex;
@@ -672,7 +666,7 @@ footer p{
 
     header {
         margin: 60px 0 0 0;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(imgCande/Extra\ 1\ -\ Cel.png);
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(imgCande/Extra\ 1.png);
         background-size: cover;
         background-position: center;
     }
