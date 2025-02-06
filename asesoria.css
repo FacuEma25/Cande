@@ -707,4 +707,12 @@ footer p{
     .formas-de-pago i{
         font-size: 0.9rem;
     }
+
+    .contact-content h3{
+        font-size: 1.3rem;
+    }
+
+    .contact-content .formas-de-pago p{
+        font-size: 0.9rem;
+    }
 }
