@@ -852,4 +852,8 @@ footer p{
         width: 11ch;
         margin: 0 auto;
     }
+
+    .promos-info p{
+        font-size: 1rem;
+    }
 }
