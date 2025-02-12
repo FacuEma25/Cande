@@ -268,7 +268,7 @@ p{
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px;
     border-radius: 50px 15px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
@@ -278,6 +278,25 @@ p{
     align-items: center;
     color: var(--principal);
 }
+
+/* Especial para que el titulo, texto y boton esten alineados */
+.card {
+
+}
+
+.card h2{
+    margin-top: 15px;
+}
+
+.bt-1{
+    margin-top: 63px;
+}
+
+.bt-8{
+    margin-top: 85px;
+}
+
+/* ACA TERMINE */
 
 .card:nth-child(1):hover{
     background-image: linear-gradient( rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8) ), url(services/1\ -\ Redes\ Sociales.jpg);
@@ -800,9 +819,9 @@ footer p{
     }
 
     /* CANCELACION DE ID SERVICIOS */
-    #servicios{
+    /* #servicios{
         display: none;
-    }
+    } */
 
     /* CAMBIOS FINALES */
 
@@ -847,8 +866,12 @@ footer p{
         margin: 0 auto;
         margin-bottom: 15px;
     }
+
+    .card{
+        margin: 0 30px;
+    }
 }
 
 @media (min-width: 481px), (max-width: 999px) {
-
+    
 }
