@@ -221,7 +221,7 @@ header{
 }
 
 /* PLANES CONTENT */
-main{
+/* main{
     background-color: var(--letra2);
 }
 
@@ -341,7 +341,7 @@ main{
     left: 0;
     background-color: rgba(255, 255, 255, .2);
     z-index: 2;
-}
+} */
 
 
 /* PLANES - GOOGLE ADS - META ADS (Solo se diferencias en el titulo */
