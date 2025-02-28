@@ -329,34 +329,23 @@ main{
     position: relative;
 }
 
-.box-cartel{
+.card-1{
+    position: relative;
+}
+
+.cart-red{
+    position: absolute;
+    right: 0px;
+    top: 14px;
+}
+
+.cart-red p{
+    font-size: 1.2rem;
     background-color: red;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: block;
-    position: fixed;
-}
-
-.cartel-1{
-    position: absolute;
-    left: 620px;
-    bottom: -30px;
-    transform: rotate(25deg);
-}
-
-.cartel-2{
-    position: absolute;
-    left: 1080px;
-    bottom: -30px;
-    transform: rotate(25deg);
-}
-
-.cartel-3{
-    position: absolute;
-    left: 1520px;
-    bottom: -30px;
-    transform: rotate(25deg);
+    color: var(--letra2);
+    display: initial;
+    padding: 15px 10px;
+    border-radius: 0 25px 0 25px;
 }
 
 .container-2{
