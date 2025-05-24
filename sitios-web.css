@@ -281,7 +281,7 @@ img{
     font-family: var(--header-font-Vieja);
     color: var(--letra);
     border-radius: 10px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .web-title .eco-tittle .precio-landing{
@@ -558,6 +558,12 @@ footer i{
 footer p{
     color: var(--black);
     font-size: 1rem;
+}
+
+/* ACTUALIZACION 24-05 */
+.web-title .eco-tittle .text-asesoramiento{
+    font-size: 1.2rem;
+    color: var(--letra);
 }
 
 
