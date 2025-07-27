@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-:root{
+:root {
     --header-font: "Jost", serif;
     --header-font-Vieja: "Yusei Magic", serif;
     --font-general: "Jost", serif;
@@ -38,22 +38,23 @@
     --naranja: #f8ad40;
     --verde: #d3d88e;
 }
+
 /*Auto scrol*/
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-section[id]{
+section[id] {
     scroll-margin-top: 70px;
 }
 
-body{
+body {
     background-color: var(--principal);
     color: var(--letra);
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -62,12 +63,12 @@ img{
     color: var(--verde);
 }
 
-.span-rosa{
+.span-rosa {
     color: var(--principal);
 }
 
 /* LINE */
-.line{
+.line {
     background-color: var(--letra3);
     height: 10px;
     width: 50px;
@@ -77,14 +78,14 @@ img{
 
 /*Tamaño de contenedor general, cambiar individualmete si lo necesito*/
 
-.container{
+.container {
     max-width: 1100px;
     /*0 arriba y abajo - Izq y der automatico al centro*/
     margin: 0 auto;
 }
 
 /*Menu-Barra*/
-.menu{
+.menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -96,43 +97,43 @@ img{
     background-color: var(--menu);
 }
 
-.logo .logo-img{
+.logo .logo-img {
     width: 100px;
 }
 
-.menu .navbar ul li{
+.menu .navbar ul li {
     position: relative;
     float: left;
 }
 
-.menu .navbar ul li a{
+.menu .navbar ul li a {
     font-size: 15px;
     padding: 20px;
     color: var(--letra);
     display: block;
 }
 
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: violet;
 }
 
 /*Todo esto es para cuando se despliegue la version de celular*/
-#menu{
+#menu {
     /*Para q no aparezca el INPUT*/
     display: none;
 }
 
-.menu-icon{
+.menu-icon {
     width: 25px;
 }
 
-.menu label{
+.menu label {
     cursor: pointer;
     display: none;
 }
 
 /* MENU VERTICAL */
-.menu-vertical{
+.menu-vertical {
     position: fixed;
     display: none;
     width: 200px;
@@ -143,14 +144,19 @@ img{
     transition: .8s;
 }
 
-.menu-horizonal li:hover .menu-vertical{
+.menu-horizonal li:hover .menu-vertical {
     display: block;
-} 
+}
+
+/* SPANS */
+.span-pink {
+    color: var(--principal);
+}
 
 /* HEADER */
 
-.header-content{
-    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) ), url(img/Asesoria.jpg);
+.header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Asesoria.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -164,65 +170,110 @@ img{
     justify-content: center;
 }
 
+.header-content h1 {
+    font-family: var(--font-general);
+    font-size: 5rem;
+}
+
+.header-content .sub-header {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    width: 30%;
+}
+
+/* MAIN */
+main {
+    margin: 80px 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.content-main{
+    border: var(--letra) 1px solid;
+    border-radius: 15px;
+    background-color: var(--menu2);
+
+    width: 500px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.content-main h2 {
+    font-family: var(--header-font);
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.content-main img{
+    width: 600px;
+}
+
+.content-main .price{
+    font-family: var(--font-general);
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.content-main .price-2{
+    font-family: var(--font-general);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-main .text-main{
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+}
+
+.content-main .sub-text-main{
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.content-main:hover{
+    background-color: var(--white);
+    color: var(--principal);
+}
+
 /**DIV FOOTER - Info y redes sociales*/
 
-.footer-info1{
+.footer-info1 {
     color: var(--black);
 }
 
-.footer-info1 .footer-contact a{
+.footer-info1 .footer-contact a {
     color: var(--black);
 }
 
 
-.footer-info{
+.footer-info {
     padding: 50px;
     text-align: center;
     background-color: var(--menu2);
 }
 
-.footer-info1{
+.footer-info1 {
     display: flex;
     text-align: left;
     gap: 250px;
     justify-content: center;
 }
 
-.footer-text p{
+.footer-text p {
     font-size: 1.1rem;
-}
-
-/*Redes sociales*/
-
-.footer-redes1{
-    padding: 20px 0 0 0;
-    display: flex;
-    justify-content: space-around;
-    gap: 25px;
-}
-
-.footer-redes1 a{
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background-color: var(--botones);
-    color: var(--black);
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-}
-
-.footer-redes1 a:hover{
-    transform: scale(1.2);
-    background-color: var(--principal);
-    color: var(--black);
 }
 
 /*BOTON TOP*/
 
-.botton-top-container{
+.botton-top-container {
     position: fixed;
     bottom: 0.1rem;
     right: 4rem;
@@ -231,7 +282,7 @@ img{
     z-index: -1;
 }
 
-.botton-top{
+.botton-top {
     width: 0rem;
     height: 0rem;
     background-color: var(--letra);
@@ -243,7 +294,7 @@ img{
     z-index: -1;
 }
 
-.botton-top i{
+.botton-top i {
     position: absolute;
     font-size: 1.7rem;
     top: 48%;
@@ -253,57 +304,60 @@ img{
     transition: .2s;
 }
 
-.show{
+.show {
     z-index: 10;
 }
 
-.show .botton-top{
+.show .botton-top {
     animation: pop .3s ease-in-out;
     height: 4.6rem;
     width: 4.6rem;
     z-index: 11;
 }
 
-.show i{
+.show i {
     transform: translate(-50%, -50%) scale(1);
 }
 
-@keyframes pop{
-    0%{
+@keyframes pop {
+    0% {
         width: 0;
         height: 0;
     }
-    50%{
+
+    50% {
         width: 8rem;
         height: 8rem;
     }
-    100%{
+
+    100% {
         height: 4.6rem;
         width: 4.6rem;
     }
 }
 
+
 /**FOOTER**/
-footer{
+footer {
     text-align: center;
-    background-color: var(--principal);
+    background-color: var(--menu);
     display: flex;
     padding: 30px;
     justify-content: center;
     gap: 50px;
 }
 
-footer a{
+footer a {
     font-family: var(--menu);
     text-decoration: none;
     color: var(--black);
 }
 
-footer i{
+footer i {
     margin: 0 auto;
 }
 
-footer p{
+footer p {
     color: var(--black);
     font-size: 1rem;
 }
