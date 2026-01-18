@@ -493,6 +493,20 @@ p {
     border-radius: 0 50% 0 0;
 }
 
+.nosotros .nosotros-text .titulos-Cande h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nosotros .nosotros-text .titulos-Cande p {
+    font-size: 1.3rem;
+}
+
+.nosotros .nosotros-text .titulos-Cande i {
+    gap: 10px;
+}
+
 /* CLIENTES */
 .clientes-contend {
     background: rgb(250, 198, 215);
