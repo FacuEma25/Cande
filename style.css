@@ -507,6 +507,22 @@ p {
     gap: 10px;
 }
 
+.titulos-cande2 {
+    margin-bottom: 15px;
+}
+
+.titulos-cande2 .titulos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.titulos-cande2 img {
+    width: 20px;
+    margin-right: 15px;
+    align-items: bottom;
+}
+
 /* CLIENTES */
 .clientes-contend {
     background: rgb(250, 198, 215);
