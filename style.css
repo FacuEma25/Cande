@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* Nuevas FUENTES */
@@ -10,6 +8,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+@font-face {
+    font-family: 'MAK';
+    src: url('/Fuentes/mak/MAK-bold.otf') format('otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Code Pro';
+    src: url('/Fuentes/code-pro/Code-Pro-Regular.otf') format('otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Code Pro-Bold';
+    src: url('/Fuentes/code-pro/Code-Pro-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: bold;
+}
 
 * {
     margin: 0;
@@ -17,29 +35,24 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 :root {
     --header-font: "Yusei Magic", serif;
-    ;
     --font-general: "Jost", serif;
-    ;
-    --font-text: "Quicksand", serif;
-    --principal: #e48aa5;
-    --menu: #fac6d7;
-    --menu2: #fac6d7;
-    --botones: #d3d88e;
-    --letra: #494949;
-    --letra2: #fff;
-    --letra2: #efede3;
-    --violeta: #642bff;
-    --black: #494949;
-    --white: #fff;
 
-    --naranja: #f8ad40;
-    --verde: #d3d88e;
+    --font-principal: "MAK", serif;
+    --font-secundaria: "Code Pro", serif;
+    --font-2do-Bold: "Code Pro-Bold", serif;
+
+    --font-text: "Quicksand", serif;
+    --principal: #252525;
+    --secundario: #fff;
+    --terciario: #052868;
+
     --gris: #494949;
+    --azul-2: #3d3dff;
 }
 
 /*Auto scrol*/
@@ -55,7 +68,9 @@ section[id] {
 body {
     background-color: var(--principal);
     /* background-color: var(--menu2); */
-    color: var(--letra2);
+    color: var(--secundario);
+    font-family: var(--font-secundaria);
+    background-color: #000000;
 }
 
 /* img{
@@ -84,7 +99,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    background-color: var(--menu2);
+    background-color: var(--terciario);
 }
 
 .logo .logo-img {
@@ -104,7 +119,7 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-    color: violet;
+    color: var(--gris);
 }
 
 /*Todo esto es para cuando se despliegue la version de celular*/
@@ -127,7 +142,7 @@ body {
     position: fixed;
     display: none;
     width: 200px;
-    background-color: var(--menu2);
+    background-color: var(--terciario);
 }
 
 .menu-horizonal {
@@ -135,7 +150,8 @@ body {
 }
 
 .menu-horizonal li:hover .menu-vertical {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -171,7 +187,7 @@ header {
 }
 
 h1 {
-    font-family: var(--font-general);
+    font-family: var(--font-principal);
     font-size: 5rem;
     font-weight: 400;
     line-height: 4.5rem;
@@ -180,8 +196,8 @@ h1 {
 }
 
 span {
-    color: var(--menu);
-    font-family: var(--font-general);
+    color: var(--azul-2);
+    font-family: var(--font-principal);
 }
 
 p {
@@ -203,7 +219,7 @@ p {
 }
 
 .info-header {
-    background-color: #fdebd85d;
+    background-color: #05286888;
     max-width: 1300px;
     text-align: center;
 
@@ -242,14 +258,14 @@ p {
 }
 
 .wrapper h1 {
-    font-family: var(--header-font);
+    font-family: var(--font-principal);
     font-size: 3rem;
     color: var(--white);
     margin-bottom: 15px;
 }
 
 .wrapper .wrapper-text {
-    font-family: var(--font-general);
+    font-family: var(--font-secundaria);
     font-size: 1.5rem;
     color: var(--white);
     margin-bottom: 15px;
@@ -267,7 +283,7 @@ p {
 }
 
 .card {
-    background-color: var(--white);
+    background-color: var(--gris);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -278,7 +294,7 @@ p {
     cursor: pointer;
     align-items: start;
     align-items: center;
-    color: var(--principal);
+    color: var(--secundario);
 }
 
 /* Especial para que el titulo, texto y boton esten alineados */
@@ -314,88 +330,88 @@ p {
 /* ACA TERMINE */
 
 .card:nth-child(1):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/1\ -\ Redes\ Sociales.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/1\ -\ Redes\ Sociales.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(2):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/2\ -\ Redes\ Sociales.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/2\ -\ Redes\ Sociales.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(3):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/3\ -\ Publicidad\ Digital.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/3\ -\ Publicidad\ Digital.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(4):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/4\ -\ Asesoria.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/4\ -\ Asesoria.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(5):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/5\ -\ Asesoria\ comercial.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/5\ -\ Asesoria\ comercial.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(6):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/6\ -\ Ortatoria\ y\ Liderazgo.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/6\ -\ Ortatoria\ y\ Liderazgo.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(7):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/7\ -\ Coaching.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/7\ -\ Coaching.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card:nth-child(8):hover {
-    background-image: linear-gradient(rgba(228, 138, 165, 0.8), rgba(179, 86, 113, 0.8)), url(services/8\ -\ Cursos.jpg);
+    background-image: linear-gradient(rgba(5, 40, 104, 0.8), rgba(5, 40, 104, 0.8)), url(services/8\ -\ Cursos.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
 }
 
 .card h2 {
-    font-family: var(--font-general);
+    font-family: var(--font-2do-Bold);
     font-size: 1.6rem;
     line-height: 1.6rem;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-family: var(--font-text);
-    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .card a {
-    background-color: var(--principal);
+    background-color: var(--azul-2);
     padding: 15px;
     border-radius: 20px 5px;
-    color: var(--white);
+    color: var(--secundario);
 }
 
 .card:hover a {
-    background-color: var(--white);
+    background-color: var(--secundario);
     color: var(--principal);
 }
 
 .card .prox {
-    background-color: var(--naranja);
+    background-color: var(--terciario);
 }
 
 .card:hover .prox {
@@ -523,10 +539,14 @@ p {
     align-items: bottom;
 }
 
+.titulos img{
+    color: var(--secundario);
+}
+
 /* CLIENTES */
 .clientes-contend {
-    background: rgb(250, 198, 215);
-    background: linear-gradient(90deg, rgba(250, 198, 215, 1) 0%, rgba(255, 255, 255, 1) 61%);
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(5, 40, 104, 1) 100%);
     display: flex;
     gap: 200px;
     text-align: center;
@@ -538,18 +558,19 @@ p {
 }
 
 .clientes1 {
-    color: var(--gris);
+    color: var(--secundario);
 }
 
 .clientes1 h2 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
+    color: var(--secundario);
+    font-family: var(--font-principal);
 }
 
 /**DIV FOOTER - Info y redes sociales*/
-
 .footer-info1 {
-    color: var(--black);
+    color: var(--secundario);
 }
 
 .footer-info1 .footer-contact a {
@@ -560,7 +581,7 @@ p {
 .footer-info {
     padding: 50px;
     text-align: center;
-    background-color: var(--menu2);
+    background-color: var(--terciario);
 }
 
 .footer-info1 {
@@ -589,8 +610,8 @@ p {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background-color: var(--botones);
-    color: var(--gris);
+    background-color: var(--secundario);
+    color: var(--terciario);
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
@@ -599,7 +620,7 @@ p {
 .footer-redes1 a:hover {
     transform: scale(1.2);
     background-color: var(--principal);
-    color: var(--gris);
+    color: var(--secundario);
 }
 
 /*BOTON TOP*/
@@ -694,7 +715,7 @@ footer p {
 }
 
 /* RESONSIVE */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     .menu {
         padding: 15px 0;
     }
@@ -709,7 +730,7 @@ footer p {
         left: 0;
         right: 0;
         display: none;
-        background-color: var(--menu);
+        background-color: var(--principal);
     }
 
     .menu .navbar ul li {
@@ -723,7 +744,7 @@ footer p {
     .menu-vertical {
         z-index: 10000;
         /* background-color: var(--menu); */
-        background-color: var(--letra2);
+        background-color: var(--principal);
         color: var(--principal);
         left: 110px;
     }
@@ -786,7 +807,9 @@ footer p {
     .content-2 {
         display: none;
     }
-
+    .scroll-content{
+        gap: 50px;
+    }
     .scroll img {
         margin: 0px;
     }
